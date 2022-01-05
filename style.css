@@ -59,3 +59,31 @@ nav {
     border-radius: 50px;
     background-color: white;
 }
+/*Hero*/
+.hero {
+    display: flex;
+}
+.hero-dynamic-txt h1 {
+    margin-left: 10px;
+    position: relative;
+}
+.hero-dynamic-txt h1::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid white;
+    background-color: white;
+    top: 0;
+    animation: blink 0.5s infinite ease;
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1
+    }
+}
