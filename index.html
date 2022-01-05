@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-visual">
+        <header class="container">
+            <div class="logo">
+                <h1>Ziabeher Phillips</h1>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="">Projects</a></li>
+                    <li><a class="nav-link" href="">About</a></li>
+                    <li><a class="nav-link" href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+    </div>
+    <!---->
+    <script src="three.js"></script>
+    <script src="waveCDN.js"></script>
+    <script>
+
+        const waveAnimation = document.querySelector('.main-visual')
+        VANTA.WAVES({
+        el: waveAnimation,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x5023b6
+    })
+    </script>
+</body>
+</html>

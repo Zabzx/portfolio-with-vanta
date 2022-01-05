@@ -1,0 +1,61 @@
+/*Global*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/*Header*/
+/*Wave Animation*/
+.main-visual {
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+}
+.logo h1 {
+    color: white;
+}
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-links {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 75px;
+}
+.menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+}
+.menu .line {
+    height: 4px;
+    width: 30px;
+    margin-top: 3px;
+    border-radius: 50px;
+    background-color: white;
+}
