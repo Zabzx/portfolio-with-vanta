@@ -60,12 +60,15 @@ nav {
     background-color: white;
 }
 /*Hero*/
-.hero {
-    display: flex;
+.hero-static-txt {
+    font-size: 40px;
+    margin-top: 100px;
+    color: white;
 }
 .hero-dynamic-txt h1 {
-    margin-left: 10px;
     position: relative;
+    font-size: 40px;
+    color: #F1F017;
 }
 .hero-dynamic-txt h1::after {
     content: '';
@@ -78,7 +81,6 @@ nav {
     animation: blink 0.5s infinite ease;
 
 }
-
 @keyframes blink {
     0% {
         opacity: 0;

@@ -25,4 +25,4 @@ function typeWriting() {
     }());
 }
 
-typeWriting()
+typeWriting();
