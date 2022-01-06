@@ -16,7 +16,7 @@ body {
 /*Header*/
 /*Wave Animation*/
 .main-visual {
-    height: 100vh;
+    height: 70vh;
 }
 header {
     display: flex;
@@ -27,6 +27,10 @@ header {
 .logo {
     flex: 1;
 }
+.logo i {
+    color: white;
+    font-size: 50px;
+}
 .logo h1 {
     color: white;
 }
@@ -34,22 +38,44 @@ nav {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    height: 100%;
 }
 .nav-links {
     display: flex;
     font-size: 20px;
     list-style: none;
+    align-items: center;
+    height: 100%;
+}
+.about-link, .contact-link {
+    margin-left: 75px;
 }
 .nav-link {
     color: white;
     text-decoration: none;
-    margin-left: 75px;
+    position: relative;
+    padding: 0px 7px;
+    padding-bottom: 10px;
+}
+.nav-link::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    margin-top: 10px;
+    height: 3px;
+    background: #F1F017;
+    transition: 0.5s;
+}
+.nav-link:hover::after {
+    width: 100%;
 }
 .menu {
     flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
+    flex-direction: column;
     display: none;
 }
 .menu .line {
@@ -80,6 +106,20 @@ nav {
     top: 0;
     animation: blink 0.5s infinite ease;
 
+}
+.hero button {
+    font-size: 20px;
+    color: #5023b6;
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero button:hover {
+    background: #F1F017;
 }
 @keyframes blink {
     0% {
