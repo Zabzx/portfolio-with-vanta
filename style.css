@@ -121,6 +121,60 @@ nav {
 .hero button:hover {
     background: #F1F017;
 }
+
+/*Projects*/
+.projects-header {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    width: 70%;
+    margin: 50px auto;
+    padding-bottom: 10px;
+}
+.projects-header::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    bottom: 0;
+    left: 0;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+.project {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 90%;
+    box-shadow: 0px 20px 15px -15px #5023b6;
+}
+.pr-img {
+    width: 100%;
+}
+.pr-title {
+    text-align: center;
+    color: #5023b6;
+}
+.pr-tech {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.pr-links {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pr-links button {
+    font-size: 16px;
+    background: #5023b6;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+}
 @keyframes blink {
     0% {
         opacity: 0;
