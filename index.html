@@ -10,9 +10,11 @@
 </head>
 <body>
     <div class="main-visual">
-        <header class="container">
+        <header class="header-container">
             <div class="logo">
                 <i class="fas fa-bolt"></i>
+                <i class="github-link fab fa-github"></i>
+                <i class="linkedin-link fab fa-linkedin"></i>
             </div>
 
             <nav>
@@ -153,13 +155,13 @@
 
     <section class="about">
         <h1 class="about-header">About Me</h1>
-        <div class="container">
+        <div class="about-flex container">
             <div class="qualities">
                 <h1>Qualities</h1>
                 <p>I'm a front end web developer based in the Caribbean. I strive to deliver quality, bug free code that follows best practices, and building scalable applications. I like to work on meaningful projects and technically challenging problems. My goal is to grow further as a devoloper and become a Full-Stack dev by the end of 2022, then move on to Mobile Development or something really cool like machine learning. I see myself as an ambition, hard working person who's friendly and easy-going. I can fit into any team environment and cooperate friendly with respect, or I can work on my own if needed.</p>
             </div>
             <div class="skills">
-                <h1>My Tech Stack as of right now:</h1>
+                <h1>My current Tech Stack:</h1>
                 <ul>
                     <li><i style="color: #61DBFB" class="fab fa-react"></i> ReactJS</li>
                     <li><i style="color: #E34C26;" class="fab fa-html5"></i> HTML</li>
@@ -171,6 +173,19 @@
             </div>
         </div>
     </section>
+
+    <section class="contact">
+        <h1 class="contact-header">Contact Me</h1>
+        <div class="container">
+        <form action="https://formsubmit.co/ziabeherphillips@gmail.com" method="POST">
+            <input type="email" name="email" placeholder="Your Email Address" required class="user-email"> <br>
+            <textarea placeholder="Your message" name="text" id="" cols="30" rows="10" class="user-message"></textarea> <br>
+            <button type="submit" class="contact-submit">Send</button>
+       </form>
+       </div>
+    </section>
+
+    <footer><h1>2022 Ziabeher Phillips</h1></footer>
     <!---->
     <script src="main.js"></script>
     <script src="three.js"></script>
