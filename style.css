@@ -18,10 +18,6 @@ body {
 .main-visual {
     height: 70vh;
 }
-.header-container {
-    width: 90%;
-    margin: 0 auto;
-}
 header {
     display: flex;
     justify-content: space-between;
@@ -66,8 +62,10 @@ nav {
     color: white;
     text-decoration: none;
     position: relative;
-    padding: 0px 7px;
+    padding-top: 0px;
     padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 0px;
 }
 .nav-link::after {
     position: absolute;
@@ -304,28 +302,26 @@ footer h1 {
     .logo {
         display: flex;
         align-items: center;
-        margin-left: 10%;
+    }
+    .fa-bolt {
+        display: none !important;
+    }
+    .github-link {
+        margin-left: 0px;
     }
     .fa-bolt {
         font-size: 40px;
     }
     .nav-links {
-        flex-direction: column;
-        background-color: white;
-        position: absolute;
-        right: 0;
+        align-items: center;
+        height: 100%;
+        font-size: 15px;
     }
     .about-link, .contact-link {
         margin-left: 0px;
-        color: white;
     }
     .nav-link {
-        color: #5023b6;
-    }
-    .menu {
-        display: block;
-        display: flex;
-        margin-right: 10%;
+        color: white;
     }
 
     /*Hero*/

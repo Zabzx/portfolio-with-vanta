@@ -15,7 +15,7 @@ function typeWriting() {
         letter = currentText.slice(0, ++index)
 
         const typing = document.querySelector('.typing');
-        typing.style.fontSize = '20px'
+        typing.style.fontSize = '30px'
         typing.textContent = letter;
 
         if (letter.length === currentText.length) {
@@ -26,21 +26,4 @@ function typeWriting() {
         setTimeout(type, 100)
     }());
 }
-
-//Navbar animation
-function navBar() {
-    const menuBtn = document.querySelector('.menu');
-    const links = document.querySelectorAll('.navlinks li')
-
-    menuBtn.addEventListener('click', () => {
-        links.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 3}s`
-            }
-        })
-    })
-}
-navBar();
 typeWriting();
