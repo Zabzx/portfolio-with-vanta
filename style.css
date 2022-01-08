@@ -12,6 +12,12 @@ body {
     width: 90%;
     margin: auto;
 }
+.social-link {
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
 
 /*Header*/
 /*Wave Animation*/
