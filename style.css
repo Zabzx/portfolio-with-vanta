@@ -197,6 +197,7 @@ nav {
     border-radius: 20px;
     border: none;
     padding: 10px 15px;
+    cursor: pointer;
 }
 /*About*/
 .about {
