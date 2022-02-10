@@ -170,6 +170,7 @@ nav {
     border-bottom-right-radius: 20px;
     width: 90%;
     box-shadow: 0px 20px 15px -15px #5023b6;
+    border: 1px solid #EBEBEB;
 }
 .pr-img {
     width: 100%;
